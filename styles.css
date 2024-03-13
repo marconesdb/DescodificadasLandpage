@@ -1,0 +1,149 @@
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .card {
+    flex: 0 1 calc(30% - 20px);
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (max-width: 768px) {
+    .card {
+      flex: 0 1 calc(45% - 20px);
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .card {
+      flex: 0 1 calc(100% - 20px);
+    }
+  }
+
+
+
+   /* Estilos para centralizar a iframe */
+   .section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Definir altura da seção para ocupar toda a altura da tela */
+  }
+
+  /* Estilos para tornar a iframe responsiva */
+  iframe {
+    margin-bottom: 350px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* Estilos para centralizar o conteúdo */
+  .container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+    margin-top: -400px;
+  }
+
+  .iframe-wrapper {
+    max-width: 95%; /* Define a largura máxima do iframe */
+    max-height: 90%; /* Define a altura máxima do iframe */
+  }
+
+  .iframe2 {
+    width: 100%; /* Ocupa 100% da largura do contêiner */
+    height: 100%; /* Ocupa 100% da altura do contêiner */
+  }
+
+
+.form{
+  margin-top: -100px;
+}
+.container4 {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+.footer {
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .social {
+  margin-top: 10px;
+}
+
+.footer .social a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #007bff;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer .social a {
+    font-size: 16px;
+  }
+}

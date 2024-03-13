@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Responsiva</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  color: #FFF;
+  height: 100px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+
+img{
+    background-image: url(Delicious.png);
+    width: 97%;
+    height: 600px;
+    margin: 10px;
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background: linear-gradient(to right, #ff00cc, #3333ff);
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+
+
+.fundo-degrade {
+    background: linear-gradient(to right, #ff00cc, #3333ff); /* Mudar cores conforme necessário */
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.paragrafo{
+    text-align: center;
+    text-justify: center;
+    justify-items: center;
+}
+
+.container {
+    display: block;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+}
+
+
+
+
+/* Estilo para tornar a seção responsiva */
+@media only screen and (max-width: 600px) {
+    .fundo-degrade {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+  </style>
+</head>
+<body>
+    <section class="top-nav">
+        <div>
+          <img src="Captura de Tela (4239).png" alt="" style="width: 80px; height: 50px; border-radius: 5px;">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li>Início</li>
+          <li>Sobre</li>
+          <li>Projetos</li>
+          <li>Galeria</li>
+          <li>Contato</li>
+        </ul>
+      </section>
+    <div class="container">
+      <section class="fundo-degrade" style="margin-top: 50px;">
+        <h2>Sorvete de Verão: Doce Refrescância</h2>
+        <p class="paragrafo">
+            No calor escaldante do verão, nada refresca melhor do que um sorvete delicioso da Sorveteria Glaciale. Com ingredientes frescos e sabores incrivelmente cremosos, cada colher é uma explosão de prazer gelado. Dos clássicos como baunilha e chocolate até criações surpreendentes como torta de limão e cookie dough, temos o sorvete perfeito para cada paladar. Venha se refrescar conosco em um verdadeiro oásis de delícias congeladas. A Sorveteria Glaciale: o lugar onde o verão fica ainda mais doce!
+        </p>
+    </section>
+      
+        <img class="fundo-degrade" src="Delicious.png" alt="">
+        
+    </div>
+
+    <div class="container2">
+        <div class="card">
+          <img src="img4.png" alt="Imagem 1">
+          <div class="card-content">
+            <!-- <h2>Card 1</h2>
+            <p>Descrição do Card 1</p> -->
+          </div>
+        </div>
+        <div class="card">
+          <img src="img5.png" alt="Imagem 2">
+          <div class="card-content">
+            <!-- <h2>Card 2</h2>
+            <p>Descrição do Card 2</p> -->
+          </div>
+        </div>
+        <div class="card">
+          <img src="img6.png" alt="Imagem 3">
+          <div class="card-content">
+            <!-- <h2>Card 3</h2>
+            <p>Descrição do Card 3</p> -->
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <section class="section2" >
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7gJIyHnD710?si=2Iyl__FHxHNepfNq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+      
+
+      
+      <div class="container3">
+       
+        <div class="iframe-wrapper">
+          <h1 style="text-align: center; "> Nossa Localização</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.036420661759!2d-43.87663162485002!3d-16.725034484053555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xab53510258ee31%3A0xbc9d1e26f813d54b!2sR.%20Dr.%20Tupiniquins%2C%20155%20-%20Melo%2C%20Montes%20Claros%20-%20MG%2C%2039401-070!5e0!3m2!1spt-BR!2sbr!4v1710329302728!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      
+      
+
+
+      <section class="form">
+        <div class="container4">
+          <h2>Formulário de Contato</h2>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone de Contato:</label>
+              <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+
+
+
+      <div class="footer">
+        <p>&copy; 2024 Super Delicious. Todos os direitos reservados. Feito por Marcone Silva de Brito</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+<script src="script.js"></script>      
+</body>
+</html>
