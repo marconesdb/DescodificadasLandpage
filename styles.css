@@ -2,16 +2,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px;
+    margin: 50px;
   }
 
   .card {
     flex: 0 1 calc(30% - 20px);
-    background-color: #f0f0f0;
+    background: linear-gradient(to right, #ff00cc, #3333ff);
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
     box-sizing: border-box;
+    
+    
   }
 
   @media screen and (max-width: 768px) {
