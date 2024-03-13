@@ -324,7 +324,7 @@ a{
 .footer .social a {
   display: inline-block;
   margin: 0 10px;
-  color: #007bff;
+  color: #fff;
   font-size: 20px;
 }
 
@@ -332,4 +332,24 @@ a{
   .footer .social a {
     font-size: 16px;
   }
+}
+
+
+/* Estilos para o botão */
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
 }
