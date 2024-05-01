@@ -92,7 +92,7 @@ html, body {
 
 img{
   background-image: url(Delicious.png);
-  width: 97%;
+  width: 100%;
   height: 600px;
   margin: 10px;
 }
@@ -141,12 +141,12 @@ img{
 
 .fundo-degrade {
   background: linear-gradient(to right, #ff00cc, #3333ff); /* Mudar cores conforme necessário */
-  padding: 20px;
+  padding: 10px;
   color: white;
   border-radius: 10px;
   margin-top: 50px; 
-  max-width: 97%;
-   margin: 0 auto;
+  max-width: 100%;
+  margin: 10px;
    
   
 }
@@ -155,6 +155,8 @@ img{
   text-align: center;
   text-justify: center;
   justify-items: center;
+  padding: 10px;
+  margin: 10px;
 }
 
 .container {
@@ -186,15 +188,24 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px;
+    margin: 50px auto; /* Alterado de 50px */
+    padding: 0 10px; /* Adicionado espaçamento lateral */
   }
-
+  .card img {
+    width: 95%; /* Defina a largura desejada para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+ 
+  }
+  
   .card {
     flex: 0 1 calc(30% - 20px);
     background: linear-gradient(to right, #ff00cc, #3333ff);
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+   
     box-sizing: border-box;
     
     
@@ -209,10 +220,12 @@ a{
   @media screen and (max-width: 576px) {
     .card {
       flex: 0 1 calc(100% - 20px);
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
-
+ 
 
    /* Estilos para centralizar a iframe */
    .section2 {
@@ -367,7 +380,7 @@ a{
 
 
 /* Adicione o CSS para o dropdown */
-/* Adicione o CSS para o dropdown */
+/* Estilos para o dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -390,4 +403,9 @@ a{
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+ /* Estilos de hover */
+ .dropdown-content a:hover {
+  background-color: #ddd;
 }
