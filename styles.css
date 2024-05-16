@@ -381,7 +381,7 @@ a{
 
 /* Adicione o CSS para o dropdown */
 /* Estilos para o dropdown */
-.dropdown {
+/* .dropdown {
   position: relative;
   display: inline-block;
 }
@@ -408,4 +408,4 @@ a{
  /* Estilos de hover */
  .dropdown-content a:hover {
   background-color: #ddd;
-}
+} */
