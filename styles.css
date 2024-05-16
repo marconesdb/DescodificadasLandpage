@@ -386,31 +386,37 @@ a{
   background-color: #0056b3;
 }
 
-
-/* Estilos para o submenu */
-.submenu {
-  display: flex;
-  text-align: center;
-  width: 100%;
+/* Estilos para o dropdown */
+.submenu .dropdown {
   display: none;
   position: absolute;
-  background-color: #ff00cc;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  background-color:   #bf1c86;
+  min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-.submenu li {
-  margin: -10px;
-  padding: 10px;
-  border-bottom: 1px solid #fff;
+@media (max-width: 540px) {
+  .submenu .dropdown {
+   margin-top: 32px;
+   width: 100%;
+   text-align: center;
+  }
 }
 
-.submenu li:last-child {
-  border-bottom: none;
-}
-
-.menu > li:hover .submenu {
+.submenu .dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
 }
+
+.submenu:hover .dropdown {
+  display: block;
+ 
+}
+.submenu .dropdown a:hover {
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  color: #fff;
+}
+ 
