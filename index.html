@@ -214,7 +214,7 @@ a{
   }
 }
 .container2 {
-  max-width: 90%;
+    max-width: 92%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -244,14 +244,26 @@ a{
     }
   }
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 540px) {
+    .container2{
+      width: 100%;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
     .card {
-      flex: 0 1 calc(100% - 20px);
-      margin-left: auto;
-      margin-right: auto;
+      width: 550px;
+    
     }
   }
 
+
+  @media screen and (max-width: 540px) {
+    #img1, #img2, #img3 {
+    
+      width: 440px;
+    
+    }
+  }
  
 
    /* Estilos para centralizar a iframe */
@@ -495,19 +507,19 @@ a{
 
     <div id="gallery"  class="container2">
         <div class="card">
-          <img src="./img/img4.png" alt="Imagem 1" >
+          <img id="img1" src="./img/img4.png" alt="Imagem 1" >
           <div class="card-content">
            
           </div>
         </div>
         <div class="card">
-          <img src="./img/img5.png" alt="Imagem 2">
+          <img id="img2" src="./img/img5.png" alt="Imagem 2">
           <div class="card-content">
           
           </div>
         </div>
         <div class="card">
-          <img src="./img/img6.png" alt="Imagem 3">
+          <img id="img3" src="./img/img6.png" alt="Imagem 3">
           <div class="card-content">
          
             <p>Preços a partir de R$ 15,90</p>
