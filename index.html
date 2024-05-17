@@ -107,6 +107,16 @@ img{
   margin: 10px;
 }
 
+#Delicious, .fundo-degrade {
+max-width: 90%;
+margin-top: 20px; 
+margin-bottom: 20px; 
+display: block; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 0px;
+}
+
 @media (max-width: 700px) {
 .menu-button-container {
   display: flex;
@@ -157,13 +167,13 @@ img{
 
 .fundo-degrade {
   background: linear-gradient(to right, #ff00cc, #3333ff); /* Mudar cores conforme necessário */
-  padding: 10px;
+  padding: 0;
   color: white;
   border-radius: 10px;
   margin-top: 50px; 
-  max-width: 100%;
-  margin: 10px;
-   
+  max-width: 90%;
+  margin: 0;
+  
   
 }
 
@@ -176,12 +186,15 @@ img{
 }
 
 .container {
-  display: block;
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center; /* centraliza verticalmente */
-  margin: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  margin: 20px auto; /* Centraliza horizontalmente */
+  max-width: 100%;
 }
+
+
 a{
   text-decoration: none;
   color: #fff;
@@ -197,10 +210,11 @@ a{
 @media only screen and (max-width: 600px) {
   .fundo-degrade {
       padding: 10px;
-      margin: 10px;
+      margin: 0px;
   }
 }
 .container2 {
+  max-width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -221,10 +235,7 @@ a{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-   
     box-sizing: border-box;
-    
-    
   }
 
   @media screen and (max-width: 768px) {
@@ -249,6 +260,7 @@ a{
     justify-content: center;
     align-items: center;
     height: 100vh; /* Definir altura da seção para ocupar toda a altura da tela */
+    margin: 0px, 10px 0px, 10px;
   }
 
   /* Estilos para tornar a iframe responsiva */
@@ -282,7 +294,7 @@ a{
   margin-top: -100px;
 }
 .container4 {
-  max-width: 600px;
+  max-width: 490px;
   margin: 20px auto;
   padding: 20px;
   background: linear-gradient(to right, #ff00cc, #3333ff);
@@ -409,6 +421,7 @@ a{
    margin-top: 32px;
    width: 100%;
    text-align: center;
+   
   }
 }
 
@@ -476,12 +489,12 @@ a{
           </p>
       </section>
     
-      <img class="fundo-degrade" src="./img/Delicious (2).png" alt="" style="max-width: 100%; margin-top: 20px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto; padding: 20px">
+      <img id="Delicious" class="fundo-degrade" src="./img/Delicious (2).png" alt="">
   </div>
    
 
     <div id="gallery"  class="container2">
-        <div class="card" >
+        <div class="card">
           <img src="./img/img4.png" alt="Imagem 1" >
           <div class="card-content">
            
@@ -507,8 +520,8 @@ a{
       
 
       <section class="section2">
-        <iframe width="560" height="315" style="background: linear-gradient(to right, #ff00cc, #3333ff); border-radius: 8px; padding: 20px;" src="https://www.youtube.com/embed/7gJIyHnD710?si=2Iyl__FHxHNepfNq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </section>
+        <iframe width="490" height="315" style="background: linear-gradient(to right, #ff00cc, #3333ff); border-radius: 8px; padding: 20px;" src="https://www.youtube.com/embed/7gJIyHnD710?si=2Iyl__FHxHNepfNq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     </section>
     
       
 
@@ -517,7 +530,7 @@ a{
        
         <div class="iframe-wrapper">
           <h1 style="text-align: center; "> Nossa Localização</h1>
-          <iframe style="background: linear-gradient(to right, #ff00cc, #3333ff); border-radius: 8px; padding: 20px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.036420661759!2d-43.87663162485002!3d-16.725034484053555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xab53510258ee31%3A0xbc9d1e26f813d54b!2sR.%20Dr.%20Tupiniquins%2C%20155%20-%20Melo%2C%20Montes%20Claros%20-%20MG%2C%2039401-070!5e0!3m2!1spt-BR!2sbr!4v1710329302728!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe style="background: linear-gradient(to right, #ff00cc, #3333ff); border-radius: 8px; padding: 20px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.036420661759!2d-43.87663162485002!3d-16.725034484053555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xab53510258ee31%3A0xbc9d1e26f813d54b!2sR.%20Dr.%20Tupiniquins%2C%20155%20-%20Melo%2C%20Montes%20Claros%20-%20MG%2C%2039401-070!5e0!3m2!1spt-BR!2sbr!4v1710329302728!5m2!1spt-BR!2sbr" width="490" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       
